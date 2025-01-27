@@ -33,7 +33,7 @@ In the above example we see that the result is not accurate at all. This is beca
 **For Berta and Roberta, we only use the first 1000 rows of the dataset**
 
 ## 2. Bert
-Secondly, we use Bert which is a **bidirectional** transformer pretrained using a combination of masked language modeling objective and next sentence prediction on a large corpus comprising the Toronto Book Corpus and Wikipedia.
+Secondly, we use [Bert](https://arxiv.org/abs/1810.04805) which is a **bidirectional** transformer pretrained using a combination of masked language modeling objective and next sentence prediction on a large corpus comprising the Toronto Book Corpus and Wikipedia.
 
 ### Sample Result
 
@@ -50,7 +50,7 @@ The accuracy is about 92.43%.
 
 ## 3. Roberta
 
-Lastly, we use Roberta which builds on BERT and modifies key hyperparameters, removing the next-sentence pretraining objective and training with much larger mini-batches and learning rates.
+Lastly, we use [Roberta](https://arxiv.org/abs/1907.11692) which builds on BERT and modifies key hyperparameters, removing the next-sentence pretraining objective and training with much larger mini-batches and learning rates.
 
 ### Sample Result
 <img width="918" alt="Screenshot 2023-11-07 at 02 03 04" src="https://github.com/tianw52/sentiment_analysis/assets/129543727/7fc6cb91-a24c-42dd-a955-7f70bd2c703a">
