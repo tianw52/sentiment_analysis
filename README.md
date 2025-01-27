@@ -13,10 +13,10 @@ The dataset has 50,000+ rows with 10 different features, in the project we mainl
 
 Notice that the reviews are unbalanced, most of the reivews are highly positive.
 
-** NOTE: for the purpose of this project, we use the stars are references to verify the accuracy of our models.**
+**NOTE: for the purpose of this project, we use the stars are references to verify the accuracy of our models.**
 
 ## 1. Vader
-Firstly, we use Vader, which is a bag-of-n-garms approach.
+Firstly, we use Vader, which is a [bag-of-n-garms](https://en.wikipedia.org/wiki/N-gram) approach.
 
 ### Sample Result
 <img width="822" alt="Screenshot 2023-11-07 at 00 52 45" src="https://github.com/tianw52/sentiment_analysis/assets/129543727/27094dd1-e4cd-41b3-9c8b-8bb686487247">
@@ -30,7 +30,7 @@ Firstly, we use Vader, which is a bag-of-n-garms approach.
 
 In the above example we see that the result is not accurate at all. This is because the Vader model use bag of n-grams approach, i.e. it take tokens individually without considering the sequence/order, which is important in human languages, for sentiment analysis
 
-** For Berta and Roberta, we only use the first 1000 rows of the dataset**
+**For Berta and Roberta, we only use the first 1000 rows of the dataset**
 
 ## 2. Bert
 Secondly, we use Bert which is a **bidirectional** transformer pretrained using a combination of masked language modeling objective and next sentence prediction on a large corpus comprising the Toronto Book Corpus and Wikipedia.
